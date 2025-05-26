@@ -25,7 +25,9 @@ apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 
 android {
-    compileSdkVersion 30
+    compileSdkVersion flutter.compileSdkVersion
+    ndkVersion flutter.ndkVersion
+    namespace 'com.example.imagegallerysaver'
 
     sourceSets {
         main.java.srcDirs += 'src/main/kotlin'
